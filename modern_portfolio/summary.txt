@@ -1,0 +1,27 @@
+1 - Intro & Sass Workflow Setup
+
+Created folders and index.html and main.scss files. The browser doesn't read scss so we need to use something to compile it down to css. Using node-sass. Must use npm.
+
+Must create package.json first using npm init. Then install node-sass using npm i node-sass. It will add the dependency to package.json.
+
+Now we need to use an npm script to set up sass. In the package.json scripts, put "sass": "node-sass -w scss/ -o dist/css/ --recursive". This runs the node-sass program, -w means it will watch the scss folder, -o means it will output the compiled sass the dist/css. Run the script using npm run sass.
+
+Now in the main.scss file we write some sass. $primary-color: #444, then body {background: $primary-color}. Then a css file is created and this is converted to css automatically.
+
+When we installed node-sass it added loads of files to a folder called node_modules. When we upload all of this to a repository, we don't want to include these files, so we add 'node-modules' to a file called .gitignore.
+
+Now we initialise a git repository. git init in the terminal. git add ., to add all. Then git commit -m 'Initial workflow setup'. Now it's been committed, though we won't push it to GitHub yet.
+
+2 - Homepage & Main Sass
+
+Fairly standard HTML. The menu button is created with the 3 btn-line divs.
+
+Sass stuff - lighten function, first parameter is the original color, the second is how much we want to lighten it. Wrapped this in rgba after too.
+
+Also used nesting, fairly obvious what they each do.
+
+Also used mixins for a transition, as we'll be using it again. '@mixin name {transition...}' at the top, and to use it '@include name()' in the selector.
+
+Initially we created an overlay element, but then we changed it to use the ':after' pseudo-element.
+
+And finally we moved all of the sass variables and mixins to a seperate scss file, _config.scss. At the top of main.scss we included the statement '@import 'config'', tidier.
