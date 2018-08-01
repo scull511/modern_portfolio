@@ -25,3 +25,7 @@ Also used mixins for a transition, as we'll be using it again. '@mixin name {tra
 Initially we created an overlay element, but then we changed it to use the ':after' pseudo-element.
 
 And finally we moved all of the sass variables and mixins to a seperate scss file, _config.scss. At the top of main.scss we included the statement '@import 'config'', tidier.
+
+3 - Rotating Menu button
+
+14m 14s
