@@ -11,8 +11,9 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px ;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
+        border-radius: 1.5px;
     }
 
     // Rotate into X with Menu Lines
@@ -115,7 +116,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
@@ -129,30 +130,5 @@
 @for $x from 1 through 4 {
     .nav-item:nth-child(#{$x}){
         transition-delay: $x * 0.1s;
-    }
-}
-
-// Media Query Mixins
-@mixin mediaSm {
-    @media screen and (max-width: 500px){
-        @content;
-    }
-}
-
-@mixin mediaMd {
-    @media screen and (max-width: 768px){
-        @content;
-    }
-}
-
-@mixin mediaLg {
-    @media screen and (min-width: 769px) and (max-width: 1170px){
-        @content;
-    }
-}
-
-@mixin mediaXl {
-    @media screen and (min-width: 1171px){
-        @content;
     }
 }

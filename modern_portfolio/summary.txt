@@ -28,4 +28,20 @@ And finally we moved all of the sass variables and mixins to a seperate scss fil
 
 3 - Rotating Menu button
 
-14m 14s
+Used JavaScript to toggle the menu, not working yet, but it does add and remove the relevant classes. Set a boolean value to check what state it is in and apply/remove the relevant classes based on that.
+
+Then wrote the sass for the rotating menu button. Each individual line does something different.
+
+4 - Menu Overlay & Responsiveness
+
+In sass, if you have a class such as .menu, and nested within a class called .menu-nav, you can use the sass selector &-nav.
+
+To slide the overlay parts in to the page, we use transform: translate3d();
+
+For the text that slides in in the menu, we have a 0.1s delay for each one, so 0.1, 0.2, 0.3 and 0.4. Used a sass for loop for this - @for $x from 1 through 4.
+
+Responsiveness - Created new scss files called _menu.scss and _mobile.scss for the MQ mixins. It's hard to explain, look at the files. Look in _config.scss too.
+
+5 - About Page with CSS Grid
+
+In _config.scss we made a function that changes the color of the text and menu icon from white to black if the primary color is light. Applied this to the scss styles by entering the function name instead of the actual color name (white).
