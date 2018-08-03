@@ -45,3 +45,11 @@ Responsiveness - Created new scss files called _menu.scss and _mobile.scss for t
 5 - About Page with CSS Grid
 
 In _config.scss we made a function that changes the color of the text and menu icon from white to black if the primary color is light. Applied this to the scss styles by entering the function name instead of the actual color name (white).
+
+In about.html, put all of the markup, much of it the same as index.html. Sizing it with CSS Grid in main.scss.
+
+To make it so the footer always remains at the bottom, we create a sticky footer. At the moment the main element has a height of 100%, and it is sized according to the content within. If there is no content, the footer floats off the bottom. To fix this, we used min-height on main set at calc(100vh - 60px), 60px being the height of the footer.
+
+Also changed stuff in the _mobile.scss file too. Moved the @import 'mobile' line to the bottom too as we want the MQs to run after the main CSS.
+
+6 - Work & Contact Pages
