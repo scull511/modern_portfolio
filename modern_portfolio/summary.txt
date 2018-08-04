@@ -53,3 +53,11 @@ To make it so the footer always remains at the bottom, we create a sticky footer
 Also changed stuff in the _mobile.scss file too. Moved the @import 'mobile' line to the bottom too as we want the MQs to run after the main CSS.
 
 6 - Work & Contact Pages
+
+Work page HTML. Added responsiveness using grid-template-columns. Also styled buttons by creating a .btn class and styling that, then using '@extend .btn' in each individual button style. Even though there is no btn class.
+
+Contact page was the same, used Flexbox instead of Grid though.
+
+7 - Website Deployment
+
+Deploying it to Github page
