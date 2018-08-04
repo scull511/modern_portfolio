@@ -58,14 +58,14 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #EECE1A; }
+      border: solid 3px #1a8fee; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-in-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #EECE1A; }
+      color: #1a8fee; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-in-out; }
     .menu .nav-link:hover {
-      color: #EECE1A; }
+      color: #1a8fee; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -135,7 +135,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #EECE1A; }
+  color: #1a8fee; }
 
 main {
   padding: 4rem;
@@ -145,7 +145,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #EECE1A;
+        color: #1a8fee;
         transition: all 0.5s ease-in-out; }
   main#home {
     overflow: hidden; }
@@ -161,7 +161,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #EECE1A 3px solid; }
+    border: #1a8fee 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -174,7 +174,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #EECE1A 5px solid; }
+    border-bottom: #1a8fee 5px solid; }
 
 .projects {
   display: grid;
@@ -185,7 +185,7 @@ main {
     border: 3px white solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #EECE1A;
+      border-color: #1a8fee;
       transition: all 0.5s ease-in-out; }
 
 .boxes {
@@ -201,7 +201,7 @@ main {
     margin-bottom: 3rem;
     transition: all 0.5s ease-in-out; }
     .boxes div:hover {
-      background: #EECE1A;
+      background: #1a8fee;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -212,7 +212,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #EECE1A;
+    background: #1a8fee;
     color: #000; }
 
 .btn-dark {
